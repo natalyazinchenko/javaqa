@@ -5,23 +5,13 @@ public static void main(String [] args) {
     hello("user");
     hello("Natasha");
 
-    double len = 5;
-    System.out.println("Square " + len + " equals: " + area(len));
-
-    double a = 4;
-    double b = 6;
-    System.out.println("Square pryamougolnika so storonami " + a + " i " + b + " ravno " + areasq(a,b));
+    Square s = new Square(5);
+    Rectangle r = new Rectangle(4,6);
+    System.out.println("Square " + s.l + " equals: " + s.area());
+    System.out.println("Square pryamougolnika so storonami " + r.a + " i " + r.b + " ravno " + r.areasq());
 }
 
 public static void hello(String somebody) {
     System.out.println("Hello, " + somebody + "!");
-}
-
-public static double area(double l) {
-    return l * l;
-}
-
-public static double areasq(double a, double b) {
-    return a * b;
 }
 }
