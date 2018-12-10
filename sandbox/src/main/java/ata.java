@@ -1,3 +1,5 @@
+import java.sql.SQLOutput;
+
 public class ata {
 
 public static void main(String [] args) {
@@ -14,4 +16,5 @@ public static void main(String [] args) {
 public static void hello(String somebody) {
     System.out.println("Hello, " + somebody + "!");
 }
+
 }
