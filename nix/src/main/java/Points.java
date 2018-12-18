@@ -1,5 +1,9 @@
 public class Points {
 
+    double x;
+    double y;
+
+
     public static double distance(double p1, double p2){
         return p2-p1;
 
