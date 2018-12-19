@@ -1,14 +1,11 @@
 package com.example.tests;
 
-import java.util.regex.Pattern;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.*;
 import static org.testng.Assert.*;
 import org.openqa.selenium.*;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.support.ui.Select;
 
 public class GroupCreateChrome {
   private WebDriver driver;
@@ -22,22 +19,42 @@ public class GroupCreateChrome {
     driver = new ChromeDriver();
     baseUrl = "https://www.katalon.com/";
     driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+    login("admin", "secret");
+  }
+
+  private void login(String username, String password) {
+    driver.get("http://localhost/addressbook/");
+    driver.findElement(By.name("user")).clear();
+    driver.findElement(By.name("user")).sendKeys(username);
+    driver.findElement(By.name("pass")).clear();
+    driver.findElement(By.name("pass")).sendKeys(password);
+    driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Password:'])[1]/following::input[2]")).click();
   }
 
   @Test
   public void testUntitledTestCase() throws Exception {
-    driver.get("http://localhost/addressbook/");
-    driver.findElement(By.name("user")).clear();
-    driver.findElement(By.name("user")).sendKeys("admin");
-    driver.findElement(By.name("pass")).clear();
-    driver.findElement(By.name("pass")).sendKeys("secret");
-    driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Password:'])[1]/following::input[2]")).click();
+    selectGroups();
+    groupNameTyping();
+    submitChanges("submit");
+    goBackToTheGroupsPage();
+  }
+
+  private void goBackToTheGroupsPage() {
     driver.findElement(By.linkText("groups")).click();
+  }
+
+  private void submitChanges(String submit) {
+    driver.findElement(By.name(submit)).click();
+  }
+
+  private void groupNameTyping() {
     driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='test12'])[4]/following::input[1]")).click();
-    driver.findElement(By.name("group_name")).click();
+    submitChanges("group_name");
     driver.findElement(By.name("group_name")).clear();
     driver.findElement(By.name("group_name")).sendKeys("seleniumTestGroupCreate");
-    driver.findElement(By.name("submit")).click();
+  }
+
+  private void selectGroups() {
     driver.findElement(By.linkText("groups")).click();
   }
 

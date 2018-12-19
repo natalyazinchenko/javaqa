@@ -22,10 +22,16 @@
       <file leaf-file-name="GroupCreateChrome.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/GroupCreateChrome.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
-              <caret line="36" column="34" selection-start-line="36" selection-start-column="34" selection-end-line="36" selection-end-column="34" />
+            <state relative-caret-position="164">
+              <caret line="35" column="19" lean-forward="true" selection-start-line="35" selection-start-column="19" selection-end-line="35" selection-end-column="19" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#1516#1517#0" expanded="true" />
+                <element signature="e#1575#1576#0" expanded="true" />
+                <element signature="e#1547#1548#0" expanded="true" />
+                <element signature="e#1600#1601#0" expanded="true" />
+                <element signature="e#1857#1858#0" expanded="true" />
+                <element signature="e#1916#1917#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -34,8 +40,12 @@
       <file leaf-file-name="NewContactChrome.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/NewContactChrome.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="241">
-              <caret line="24" column="3" lean-forward="true" selection-start-line="24" selection-start-column="3" selection-end-line="24" selection-end-column="3" />
+            <state relative-caret-position="394">
+              <caret line="43" column="18" lean-forward="true" selection-start-line="43" selection-start-column="18" selection-end-line="43" selection-end-column="18" />
+              <folding>
+                <element signature="e#2638#2639#0" expanded="true" />
+                <element signature="e#2698#2699#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -411,6 +421,7 @@
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
+    <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="C:/Documents and Settings" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
@@ -428,7 +439,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.NewContactChrome">
+  <component name="RunManager" selected="TestNG.GroupCreateChrome">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -564,8 +575,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.NewContactChrome" />
         <item itemvalue="TestNG.GroupCreateChrome" />
+        <item itemvalue="TestNG.NewContactChrome" />
         <item itemvalue="TestNG.UntitledTestCase" />
       </list>
     </recent_temporary>
@@ -584,15 +595,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="GroupCreate - 2018.12.17 at 15h 59m 17s.xml">
-      <configuration name="GroupCreate" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="GroupCreate - 2018.12.17 at 17h 22m 39s.xml">
-      <configuration name="GroupCreate" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="GroupCreate - 2018.12.17 at 17h 26m 13s.xml">
-      <configuration name="GroupCreate" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="GroupCreate - 2018.12.17 at 17h 32m 03s.xml">
       <configuration name="GroupCreate" configurationId="TestNG" />
     </history-entry>
@@ -614,6 +616,15 @@
     <history-entry file="NewContactChrome - 2018.12.19 at 14h 09m 30s.xml">
       <configuration name="NewContactChrome" configurationId="TestNG" />
     </history-entry>
+    <history-entry file="GroupCreateChrome - 2018.12.19 at 14h 16m 22s.xml">
+      <configuration name="GroupCreateChrome" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="NewContactChrome - 2018.12.19 at 14h 17m 11s.xml">
+      <configuration name="NewContactChrome" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="GroupCreateChrome - 2018.12.19 at 14h 34m 10s.xml">
+      <configuration name="GroupCreateChrome" configurationId="TestNG" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
@@ -629,7 +640,7 @@
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.29504505" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.37612614" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
@@ -661,6 +672,12 @@
           <caret line="36" column="34" selection-start-line="36" selection-start-column="34" selection-end-line="36" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1516#1517#0" expanded="true" />
+            <element signature="e#1575#1576#0" expanded="true" />
+            <element signature="e#1547#1548#0" expanded="true" />
+            <element signature="e#1600#1601#0" expanded="true" />
+            <element signature="e#1857#1858#0" expanded="true" />
+            <element signature="e#1916#1917#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -698,18 +715,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/GroupCreateChrome.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="36" column="34" selection-start-line="36" selection-start-column="34" selection-end-line="36" selection-end-column="34" />
+        <state relative-caret-position="164">
+          <caret line="35" column="19" lean-forward="true" selection-start-line="35" selection-start-column="19" selection-end-line="35" selection-end-column="19" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1516#1517#0" expanded="true" />
+            <element signature="e#1575#1576#0" expanded="true" />
+            <element signature="e#1547#1548#0" expanded="true" />
+            <element signature="e#1600#1601#0" expanded="true" />
+            <element signature="e#1857#1858#0" expanded="true" />
+            <element signature="e#1916#1917#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/NewContactChrome.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="24" column="3" lean-forward="true" selection-start-line="24" selection-start-column="3" selection-end-line="24" selection-end-column="3" />
+        <state relative-caret-position="394">
+          <caret line="43" column="18" lean-forward="true" selection-start-line="43" selection-start-column="18" selection-end-line="43" selection-end-column="18" />
+          <folding>
+            <element signature="e#2638#2639#0" expanded="true" />
+            <element signature="e#2698#2699#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
