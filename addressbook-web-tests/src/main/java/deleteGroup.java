@@ -7,7 +7,7 @@ import org.testng.annotations.*;
 import static org.testng.Assert.*;
 import org.openqa.selenium.*;
 
-public class groupCreateChrome {
+public class deleteGroup {
   private WebDriver driver;
   private String baseUrl;
   private boolean acceptNextAlert = true;
@@ -22,6 +22,30 @@ public class groupCreateChrome {
     login("admin", "secret");
   }
 
+  @Test
+  public void testUntitledTestCase() throws Exception {
+    goToGroups();
+    selectAnyGroupViaCheckbox();
+    clickDeleteButton();
+    goBackToGroupPage();
+  }
+
+  private void goBackToGroupPage() {
+    driver.findElement(By.linkText("group page")).click();
+  }
+
+  private void clickDeleteButton() {
+    driver.findElement(By.name("delete")).click();
+  }
+
+  private void selectAnyGroupViaCheckbox() {
+    driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='seleniumTestGroupCreate'])[1]/input[1]")).click();
+  }
+
+  private void goToGroups() {
+    driver.findElement(By.linkText("groups")).click();
+  }
+
   private void login(String username, String password) {
     driver.get("http://localhost/addressbook/");
     driver.findElement(By.name("user")).clear();
@@ -29,33 +53,6 @@ public class groupCreateChrome {
     driver.findElement(By.name("pass")).clear();
     driver.findElement(By.name("pass")).sendKeys(password);
     driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Password:'])[1]/following::input[2]")).click();
-  }
-
-  @Test
-  public void testUntitledTestCase() throws Exception {
-    selectGroups();
-    groupNameTyping();
-    submitChanges("submit");
-    goBackToTheGroupsPage();
-  }
-
-  private void goBackToTheGroupsPage() {
-    driver.findElement(By.linkText("groups")).click();
-  }
-
-  private void submitChanges(String submit) {
-    driver.findElement(By.name(submit)).click();
-  }
-
-  private void groupNameTyping() {
-    driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='test12'])[4]/following::input[1]")).click();
-    submitChanges("group_name");
-    driver.findElement(By.name("group_name")).clear();
-    driver.findElement(By.name("group_name")).sendKeys("seleniumTestGroupCreate");
-  }
-
-  private void selectGroups() {
-    driver.findElement(By.linkText("groups")).click();
   }
 
   @AfterClass(alwaysRun = true)

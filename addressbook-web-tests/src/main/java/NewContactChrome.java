@@ -7,7 +7,7 @@ import org.testng.annotations.*;
 import static org.testng.Assert.*;
 import org.openqa.selenium.*;
 
-public class NewContactChrome {
+public class newContactChrome {
   private WebDriver driver;
   private String baseUrl;
   private boolean acceptNextAlert = true;
