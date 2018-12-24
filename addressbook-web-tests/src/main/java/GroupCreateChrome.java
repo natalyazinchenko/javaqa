@@ -7,7 +7,7 @@ import org.testng.annotations.*;
 import static org.testng.Assert.*;
 import org.openqa.selenium.*;
 
-public class groupCreateChrome {
+public class GroupCreateChrome {
   private WebDriver driver;
   private String baseUrl;
   private boolean acceptNextAlert = true;
